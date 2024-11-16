@@ -1,6 +1,5 @@
 # JavaScript Notes by ME 😁
-
-(refernce error cannnot access b before initilization)
+** Topics ** 
 hosting
 scope
 lexical scope
