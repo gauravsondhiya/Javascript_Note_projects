@@ -1,8 +1,9 @@
- 
 
 
- let num = 321
+let obj= {
+   course:"science"
+}
 
- while(num>0){
-    
- }
+let {course:D}= obj
+
+console.log(D)

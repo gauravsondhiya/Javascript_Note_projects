@@ -5,30 +5,32 @@
 1. **Object literal**
 2. **Object construtor**
 
-1.**Explaing Object literals**
+note - agr object literal se bnega to singleton nhi bnega lekin construtor se bnega too singleton bnega
+
+# 1.  Object literals
 
 ```
 let obj = {
      key :   value
     name: "gaurav",
-    surname: "sondhiya",
     "Muje access":"kro",
     designation: "software engineer",
-    place: "Banglore",
+   
 }
-```
+``` 
 
-**how we access value of object**
+# **how we access value of object**
 
 ```
 1 = console.log(obj.name)
 2 = console.log(obj["name"])
-3 = 4th line ko srif console.log(obj["muje access"]) se hi access kr skte ha
+3 = 4th line ko srif console.log(obj["muje access"])
+se hi access kr skte ha
 ```
 
 ---
 
-**How we update object values**
+# **How we update object values**
 
 ```
 obj.name = "Don Hu may"
@@ -47,7 +49,7 @@ let obj = {
 ```
 
 ---
-
+# obj.freeze()
 **Agr muje object ki value ko update hone se rokna ha to may use kruga freeze method to phir object ki value update nhi hogi.**
 
 ```
@@ -77,7 +79,7 @@ output => [Symbol(key1)]: 'may key ka value hu'
 
 ---
 
-**-Object ke andr function kese define kre or kese access krna ha**
+# **Object ke andr function kese define kre or kese access krna ha**
 
 ```
 let obj3= {
@@ -113,6 +115,8 @@ Output-
 ```
 
 ---
+# This
+
 **Object ke andr jo object create hota ha ussmay this keyword work nhi krta ha**
 
 ```
@@ -130,14 +134,15 @@ undefined
 
 ---
 
-**Construtor object**
+# **Construtor object**
 
 > when we create construtor object that only time singleton is created it's not applicable for literal object
 
 const gaurav = new Object() **singleton object**
 
 const obj= {}
-**Nonsingleton object**
+**Nonsingleton object or Object literals**
+
 ---
 
 **Object create using New keyword**
@@ -185,9 +190,9 @@ let obj = {
  console.log(obj.floorgino.istfloor.secondfloor.thirdfloor.fourthfloor)
 ```
 
-**Question mark "?"**
+# **Question mark "?"**
 
-Help krta  error define ke liya mention kiya to undefined aayega nhi too error aayega
+Help krta error define ke liya mention kiya to undefined aayega nhi too error aayega
 
 ```
 console.log(obj.floorgino.istfloor?.secondfloor.thirdfloor.fourthfloor)
@@ -195,7 +200,7 @@ console.log(obj.floorgino.istfloor?.secondfloor.thirdfloor.fourthfloor)
 
 ---
 
-**Merge 2 or more Object in Under one Object**
+# **Merge 2 or more Object in Under one Object**  Object.assign({},obj)
 
 ```
   let obj1 = {
@@ -211,6 +216,7 @@ console.log(obj.floorgino.istfloor?.secondfloor.thirdfloor.fourthfloor)
     }
 
 let obj3 =Object.assign({} ,target object,source object),
+
 **curly bracket- new object ke andr saare obj merger krte ha**
 
 excution-
@@ -222,22 +228,23 @@ output -
 { '1': 'dd', '2': 'gg', '3': 'aa', '4': 'qq', '5': 'rr', '6': 'ii' }
 ```
 
- >But instead we use **Spread Operator** for merging(always use for merging this method)
+> But instead we use **Spread Operator** for merging(always use for merging this method)
 
 ```
 let obj3 = {...obj1,...obj2}
   console.log(obj3)
- { '1': 'dd', '2': 'gg', '3': 'aa', '4': 'qq', '5': 'rr', '6': 'ii' } 
+ { '1': 'dd', '2': 'gg', '3': 'aa', '4': 'qq', '5': 'rr', '6': 'ii' }
 
- ```  
+```
 
 ---
-**Method  for creating array using object key and values**
+
+**Method for creating array using object key and values**
 
 1. Object.keys()
 2. Object.values()
 3. Object.entries()
-example = 1. Object.keys()
+   example = 1. Object.keys()
 
 ```
 let obj1 = {
@@ -279,6 +286,7 @@ OUTPUT =
 ```
 
 ---
+
 **HasOwnProperty**
 
 **object ke andr ye values ha ki nhi ye btata ha true or false may**
@@ -289,13 +297,14 @@ let obj1 = {
     2: "gg",
     3:"aa"
 }
-console.log(obj1.hasOwnProperty(may iss object may hu kya)) 
+console.log(obj1.hasOwnProperty(may iss object may hu kya))
 output
 false
 ```
 
 ---
- **How to access array of object**
+
+**How to access array of object**
 
 ```
 let obj =
@@ -312,45 +321,42 @@ let obj =
 
 ```
 
-----
-Important topic  **Object de-structure**
+---
+
+Important topic **Object de-structure**
 
 ```
 let obj = {
         name: "gaurav",
         surname: "sondhiya",
         "Muje access":"kro",
-        designation: "software engineer",
-        place: "Banglore"
 }
 method 1-
 agr muje surname baar-baar use krna ha to may
 let {surname} = obj
-ye use kruga issay muje 
+ye use kruga issay muje
 obj.surname likhna nhi padega baar-baar.
 
 console.log(surname)
 output -
 sondhiya
 -----------------------------------------------
-method 2- or short krskte ha 
+method 2- or short krskte ha
 let obj = {
         name: "gaurav",
         surname: "sondhiya",
         "Muje access":"kro",
-        designation: "software engineer",
-        place: "Banglore"
 }
-agr muje surname bhi short krke likhna ha to ese use kruga 
+agr muje surname bhi short krke likhna ha to ese use kruga
 let {surname:s} = obj
-ab muje srif s mention krna hoga jb bhi muje surname use krna ho to 
+ab muje srif s mention krna hoga jb bhi muje surname use krna ho to
 console.log(s)
 
 output -
 sondhiya
 ```
 
--------------------------------------------------
+---
 
 **Delete Keywords how to use and how to remove value using delete**
 
@@ -362,9 +368,9 @@ const user = {
 }
 
  delete user.name
-console.log(user) 
+console.log(user)
 
-output 
+output
 { age: 23, 'may hu don': true }
 ```
 
@@ -373,9 +379,9 @@ output
 ```
 const user= "firstname"
 const name = "Gaurav"
-   
+
 const obj ={
-    [user]:name //key change already assign ke hissab se change hogya ha 
+    [user]:name //key change already assign ke hissab se change hogya ha
 }
 console.log(obj)
 
@@ -383,30 +389,30 @@ Output
 { firstname: 'Gaurav' }
 ```
 
-  **For IN LOOP**
+**For IN LOOP**
 
-  ```
-  let obj = {
-            name: "gaurav",
-            surname: "sondhiya",
-            designation: "software engineer",
-            place: "Banglore"
-    }
+```
+let obj = {
+          name: "gaurav",
+          surname: "sondhiya",
+          designation: "software engineer",
+          place: "Banglore"
+  }
 
-   1- for (key in obj){
-        console.log(key)
-    }
+ 1- for (key in obj){
+      console.log(key)
+  }
 
 output 1
 
 name
-surname    
+surname
 designation
-place  
+place
 
-   2- for (key in obj){
-        console.log(obj[key])
-    }
+ 2- for (key in obj){
+      console.log(obj[key])
+  }
 
 ** Output**
 
