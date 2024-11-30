@@ -1,5 +1,4 @@
-
-**Differece between Normal function and function store in variable**
+# Differece between Normal function and function store in variable
 
 ```
 <!-- normal function -->

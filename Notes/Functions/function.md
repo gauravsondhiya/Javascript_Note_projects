@@ -1,15 +1,18 @@
 # Functions
 
-what is function declartion/function statement/ function defination  ?
+# what is function declartion/function statement/ function definition  ?
 ```
-function gaurav (value){
+function gaurav (parameter){
     console.log("gg")
 }
+
+[gaurav jo ha usko function ka reference bolte ha] gaurav(argument) or bracket ko bolte ha execution  
 ```
 ----------------------
 
-what is function expersion ?
-variable ke andr function ko declare krna function expersion kehlata ha
+# what is function expression ?
+
+variable ke andr function ko declare krna function expression kehlata ha
 ```
 const square = function (num){
     return num
@@ -18,19 +21,19 @@ const square = function (num){
 
 -----------------------
 
-what is Anonymous funtion ?
---
+# what is Anonymous function ?
+
 ```
  let a = function (value){
-    return
+    return value+ 1
  }
-
+ a(4)
  jis function may naam nhi hota usse anonymous funtion bolte ha
 ```
 
 ----------------
 
-What are first class function ?
+# What are first class function ?
 
 In JavaScript, first-class functions mean that functions are treated just like any other value, such as numbers or strings.
 ```
@@ -46,25 +49,17 @@ output(square)
 ```
 --------------
 
-What is IIFE?
---
+# What is IIFE?
+
 Immediate invoked function
 ```
 (function squre(num){
     consoele.log(num*num)
 })()
 ```
----
-
-function scope 
-
-
-
-
 ---- 
 
-Params and Arguments
---
+# Params and Arguments
 ```
 function square(num) //Parama{
     console.log(num*num)

@@ -2,6 +2,7 @@
 ** Topics ** 
 hosting
 scope
+This 
 lexical scope
 temperor deadzone
 shadowind
@@ -11,6 +12,5 @@ reduce
 polyfills
 lexical scope
 params vs arguments
-spread operator
-rest operator
+spread operator/rest operator
 prototype inheritance
