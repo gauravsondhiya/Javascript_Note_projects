@@ -77,3 +77,17 @@ if(Object.keys(objgg).length=== 0){
 
 
 ```
+
+# Nullish Coalescing operator (??):null undefined
+
+```
+let value ; 
+ 
+ value= 5 ?? 10 
+ output 5
+ value = null ?? 10
+ output 10
+ value = undefined ??33
+ output 33
+
+ ```

@@ -1,9 +1,5 @@
 
-
-let obj= {
-   course:"science"
+ function gs(){
+   console.log("gggg")
 }
-
-let {course:D}= obj
-
-console.log(D)
+setTimeout(gs(),2000)

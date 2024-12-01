@@ -68,3 +68,34 @@ function square(num) //Parama{
 square(5) //Arguments
 ```
 ---
+
+// function sum (...num){
+//  let sum = 0
+//  for(let i=0;i<num.length ; i++){
+//        sum = sum+num[i]
+//  }
+//  console.log(sum) 
+// }
+
+// sum(1,2,3,4)
+
+
+// let obj = {
+//     name:"gaurav",
+//     class:"ameer"
+// }
+
+// function value (obj){
+//     console.log(obj)
+// }
+
+// value(obj)
+
+
+let arr = [1,2,3,4,5]
+
+function val(arr){
+    console.log(arr[4])
+}
+
+val(arr)
