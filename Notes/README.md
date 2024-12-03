@@ -1,6 +1,7 @@
 # JavaScript Notes by ME 😁
 ** Topics ** 
 hosting
+new keyword 
 scope
 This 
 lexical scope

@@ -1,20 +1,13 @@
 
-// var user = function (value,value2){
-//     this.first= value,
-//     this.last = value2
-// }
-// let gg = new user("gaurav","sondhiya")
+const promise= new Promise((resolve,reject)=>{
+     setTimeout(()=>{
+          resolve({
+            user:"gaurav",
+            num:1234
+          })
+     },1000)
+})
 
-// console.log(gg)
-
-const promiseOne = new Promise(function (resolve, reject) {
-
-    setTimeout(() => {
-    console.log("1")
-    resolve()
-    }, 2000);
-}) 
-
-promiseOne.then(function () {
-    console.log("2")
+.then((value)=>{
+   console.log(value)
 })
